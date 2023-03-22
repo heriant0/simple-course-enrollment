@@ -4,8 +4,8 @@ const courseRoute = require('./courseRoute')
 const userEnrolledRoute = require('./userEnrolledRoute')
 
 router.use('/users', userRoute)
-router.use('/courses', userEnrolledRoute)
-router.use('/usersenrolled', courseRoute)
+router.use('/courses', courseRoute)
+router.use('/usersenrolled', userEnrolledRoute)
 
 module.exports = router
 

@@ -3,8 +3,7 @@ const Course = require('../models/courseModel')
 
 
 const UserEnrolledServices = {
-	mycourse: async (userId) => {
-		console.log(userId,' userid')
+	myCourse: async (userId) => {
 		try {
 			const result = await UserEnrolled.findAll({
 				include: [{
@@ -17,7 +16,6 @@ const UserEnrolledServices = {
 					userId: userId
 				}
 			});
-			console.log(result, 'rseult')
 			return result;
 		} catch (e) {
 			return e;
@@ -25,8 +23,6 @@ const UserEnrolledServices = {
 	},
 	
 	findCourse: async (userId, courseId) => {
-		console.log(userId, 'user id')
-		console.log(courseId, 'course id')
 		try {
 			const result = await UserEnrolled.findOne({
 				where: { 
@@ -41,7 +37,6 @@ const UserEnrolledServices = {
 	},
 
 	enrolledCourse: async(data) => {
-		console.log(data, 'data')
 		try {
 			return UserEnrolled.create(data)
 		} catch (e) {

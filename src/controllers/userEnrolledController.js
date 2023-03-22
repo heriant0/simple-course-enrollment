@@ -4,13 +4,12 @@ class UserEnrolledController {
 	static async getMyCourse(req, res)  {
 		try {
 			const userId = +req.params.userId
-			const result = await UserEnrolledServices.mycourse(userId)
+			const result = await UserEnrolledServices.myCourse(userId)
 			return res.status(200).json({
 				message: 'Get data succesfully',
 				data: result
 			})
 		} catch (e) {
-			console.log(e, 'error')
 			return res.status(500).json({
 				message: "Internal server error"
 			})
@@ -22,7 +21,6 @@ class UserEnrolledController {
 			const data = req.body
 			const findCourse = await UserEnrolledServices.findCourse(data.userId, data.courseId)
 			
-			console.log(findCourse, 'kesini gak?')
 			if (findCourse) {
 				return res.status(400).json({
 					message: 'Course already enrolled'
@@ -35,7 +33,6 @@ class UserEnrolledController {
 				})
 			}
 		} catch (e) {
-			console.log(e, 'error')
 			return res.status(500).json({
 				message: "Internal server error"
 			})
