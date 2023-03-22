@@ -169,42 +169,42 @@ Content-Type: application/json
 {
 	"message": "Get data succesfully",
 	"data": [
-			{
+		{
+			"id": 1,
+			"userId": 1,
+			"courseId": 1,
+			"enrolledDate": "2023-03-24",
+			"course": {
 				"id": 1,
-				"userId": 1,
-				"courseId": 1,
-				"enrolledDate": "2023-03-24",
-				"course": {
-					"id": 1,
-					"courseName": "Belajar Node JS",
-					"coursePrice": 150000,
-					"courseDescription": "Belajar cepat dengan nodej js"
-				}
-			},
-			{
+				"courseName": "Belajar Node JS",
+				"coursePrice": 150000,
+				"courseDescription": "Belajar cepat dengan nodej js"
+			}
+		},
+		{
+			"id": 2,
+			"userId": 1,
+			"courseId": 2,
+			"enrolledDate": "2023-03-24",
+			"course": {
 				"id": 2,
-				"userId": 1,
-				"courseId": 2,
-				"enrolledDate": "2023-03-24",
-				"course": {
-					"id": 2,
-					"courseName": "Belajar Golang",
-					"coursePrice": 200000,
-					"courseDescription": "Belajar cepat dengan Bahasa Golang"
-				}
-			},
-			{
+				"courseName": "Belajar Golang",
+				"coursePrice": 200000,
+				"courseDescription": "Belajar cepat dengan Bahasa Golang"
+			}
+		},
+		{
+			"id": 3,
+			"userId": 1,
+			"courseId": 3,
+			"enrolledDate": "2023-03-24",
+			"course": {
 				"id": 3,
-				"userId": 1,
-				"courseId": 3,
-				"enrolledDate": "2023-03-24",
-				"course": {
-					"id": 3,
-					"courseName": "Belajar Rust",
-					"coursePrice": 200000,
-					"courseDescription": "Belajar cepat dengan Rust"
-				}
-		}
+				"courseName": "Belajar Rust",
+				"coursePrice": 200000,
+				"courseDescription": "Belajar cepat dengan Rust"
+			}
+	}
 	]
 }
 
