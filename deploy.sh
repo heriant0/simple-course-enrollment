@@ -1,0 +1,1 @@
+gcloud functions deploy eduqat --entry-point course --runtime nodejs14 --trigger-http --allow-unauthenticated --project the-fulcrum-374702
